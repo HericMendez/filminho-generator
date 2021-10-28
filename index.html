@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" type="image/jpg" href="https://img.icons8.com/doodle/48/000000/film-reel--v2.png"/>
+
+    <title>Gerador de Filmes</title>
+</head>
+<body class="container-fluid"> 
+<!--
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div>
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+  -->
+    <h2>Gerador de Filmes</h2>
+    <p>Digite uma palavra para substituir parte de um título aleatório de filme <br>(ou qualquer outra categoria de obra de entretenimento) -  e veja o resultado!</p
+
+
+      
+      <main>
+        <div class="section-1-container  section-container">
+          <div class="container">
+            <div class="row">
+              <div class="col section-1">
+                <h2></h2>
+                  <br>
+                <div class="divider-1"><span></span>
+                  <form class="row justify-content-center">
+                    <div class="col-sm-5 mb-3">
+                      <input id="mod" type="text" autocomplete="off" required="true" class="form-control form-item" placeholder="Digite uma palavra">
+                    </div>
+ 
+                    <div class="col-sm-5 mb-3">
+                      <select class="form-control form-item" id="categoria">
+                        <option selected>Selecione uma categoria</option>
+                        <option value="filmes">Filmes</option>
+                        <option value="series">Séries e seriados</option>
+         
+                      </select>
+                    </div>
+                  </form>
+                </div>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+          <div class="row">
+            <div class="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
+      
+              <div class="div-to-align botao" style="height:50px;">
+                <button type="button" onclick="getData()" class="btn btn-primary btn-lg btn-block">Gerar novo título!</button>
+
+                <div class="result">
+                    <h2><span id="alterado"></span></h2>
+                   <h6><span id="original"></span></h6> 
+                </div>
+               
+              </div>
+              
+              
+              
+              
+            </div>
+            
+          </div>
+
+          
+        </div>
+      
+      </main>
+    </div>
+    
+</body>
+
+<script type="text/javascript" src="scripts/api.js"></script>
+<script type="text/javascript" src="scripts/navbar.js"></script>
+
+</html>

@@ -53,13 +53,14 @@
                         required="true"
                         class="form-control form-item"
                         placeholder="Digite uma palavra"
+                        value="cu"
                       />
                     </div>
 
                     <div class="col-sm-5 mb-3">
                       <select class="form-control form-item" id="categoria">
-                        <option selected>Selecione uma categoria</option>
-                        <option value="filmes">Filmes</option>
+                        <option >Selecione uma categoria</option>
+                        <option selected value="filmes">Filmes</option>
                         <option value="series">Séries e seriados</option>
                       </select>
                     </div>
@@ -84,7 +85,7 @@
               <div class="div-to-align botao" style="height: 50px">
                 <button
                   type="button"
-                  onclick="getData()"
+                  onclick="getData(); showData()"
                   class="btn btn-primary btn-lg btn-block"
                 >
                   Gerar novo título!

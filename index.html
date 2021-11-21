@@ -8,10 +8,12 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
@@ -21,11 +23,25 @@
       type="image/jpg"
       href="https://img.icons8.com/doodle/48/000000/film-reel--v2.png"
     />
-    <script type="text/javascript" src="scripts/api.js"></script>
-    <script type="text/javascript" src="scripts/navbar.js"></script>
+    <script type="text/javascript" src="assets/scripts/api.js"></script>
+    <script type="text/javascript" src="assets/scripts/navbar.js"></script>
     <title>Gerador de Filmes</title>
   </head>
   <body class="container-fluid">
+
+<button class="openbtn" onclick="openNav()">☰ Menu</button>  
+  <div  id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#"> <img src="assets/icons/darkmode/hourglass.svg" width="32" height="32" alt=""> Histórico</a>
+    <a href="#"><img src="assets/icons/darkmode/favorite.svg" width="32" height="32" alt=""> Favoritos</a>
+    <a href="#"><img src="assets/icons/darkmode/moon.svg" width="32" height="32" alt=""> Dark Mode</a>
+    <a href="#"><img src="assets/icons/darkmode/info.svg" width="32" height="32" alt=""> Sobre</a>
+  </div>
+  
+  <div>
+    
+
+
     <main id="page-container">
       <div id="content-wrap">
         <h2>Gerador de Filminho Aleatório</h2>
@@ -69,6 +85,7 @@
               </div>
             </div>
           </div>
+          
           <div class="row">
             <div
               class="
@@ -91,13 +108,44 @@
                   Gerar novo título!
                 </button>
 
+
                 <div class="result">
                   <h2><span id="alterado"></span></h2>
                   <h6><span id="original"></span></h6>
+                  <br>
+     
+                <div class="container">
+                  <div class="row">
+                    <div class="col text-center" >
+                      <span id="icon-row"></span>
+                     
+                      <div class="btn-group">
+                        <!-- 
+                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/prev.svg" alt=""></button>
+                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/hourglass-fav.svg" alt=""></button>
+                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/share.svg" alt=""></button>
+                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/close.svg" alt=""></button>
+                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/prev.svg" alt=""></button>
+                      -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                  
+                </div>
+
+
+
+
+
+
               </div>
+              
+              
             </div>
           </div>
+
+          
         </div>
       </div>
 

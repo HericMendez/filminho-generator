@@ -58,11 +58,11 @@ body {
 }
 
 .title-icon {
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   background-color: transparent !important;
   border: none;
-  margin: 0px 10px;
+  margin: 0px 6px;
   display: inline;
 
 }

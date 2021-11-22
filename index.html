@@ -23,7 +23,7 @@
       type="image/jpg"
       href="https://img.icons8.com/doodle/48/000000/film-reel--v2.png"
     />
-    <script type="text/javascript" src="assets/scripts/api.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
     <script type="text/javascript" src="assets/scripts/navbar.js"></script>
     <title>Gerador de Filmes</title>
   </head>
@@ -69,27 +69,21 @@
                         required="true"
                         class="form-control form-item"
                         placeholder="Digite uma palavra"
-                        value="cu"
                       />
                     </div>
 
                     
 
                     <div class="col-sm-5 mb-3">
-                      <select class="form-control form-item" id="categoria">
-                        <option >Selecione uma categoria</option>
-                        <option selected value="filmes">Filmes</option>
+                      <select onchange="listaGenero()" class="form-control form-item" id="categoria">
+                        <option selected>Selecione uma categoria</option>
+                        <option  value="filmes">Filmes</option>
                         <option value="series">Séries e seriados</option>
                       </select>
                     </div>
 
                     <div class="col-sm-5 mb-3">
-                      <select class="form-control form-item" id="categoria">
-                        <option selected value="">Selecione o gênero</option>
-                        <option value=""><img src="" alt="">Ainda não funciona...</option>
-                        <option value=""><img src="" alt="">Ainda não funciona...</option>
-                        <option value=""><img src="" alt="">Ainda não funciona...</option>
-                      </select>
+                      <span id="genero-lista"></span>
                     </div>
 
                     
@@ -115,7 +109,7 @@
               <div class="div-to-align botao" style="height: 50px">
                 <button
                   type="button"
-                  onclick="getData(); showData()"
+                  onclick="getData(); showData();"
                   class="btn btn-primary btn-lg btn-block"
                 >
                   Gerar novo título!
@@ -130,16 +124,10 @@
                 <div class="container">
                   <div class="row">
                     <div class="col text-center" >
-                      <span id="icon-row"></span>
+                     
                      
                       <div class="btn-group">
-                        <!-- 
-                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/prev.svg" alt=""></button>
-                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/hourglass-fav.svg" alt=""></button>
-                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/share.svg" alt=""></button>
-                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/close.svg" alt=""></button>
-                        <button type="button" class="title-icon"><img src="assets/icons/darkmode/prev.svg" alt=""></button>
-                      -->
+                        <span id="icon-row"></span>
                       </div>
                     </div>
                   </div>

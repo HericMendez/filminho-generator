@@ -11,7 +11,7 @@ async function getData() {
     <button id="prev" type="button" class="title-icon"><img src="assets/icons/darkmode/prev.svg" alt=""></button>
     <button type="button" class="title-icon"><img src="assets/icons/darkmode/hourglass-fav.svg" alt=""></button>
     <button type="button" class="title-icon"><img src="assets/icons/darkmode/share.svg" alt=""></button>
-    <button id="clear" type="button" class="title-icon"><img src="assets/icons/darkmode/close.svg" alt=""></button>
+    <button onclick="window.location.reload();" type="button" class="title-icon"><img src="assets/icons/darkmode/close.svg" alt=""></button>
     <button id="next" type="button" class="title-icon"><img src="assets/icons/darkmode/next.svg" alt=""></button>
     `
 
@@ -117,3 +117,6 @@ function listaGenero(){
 
 
 
+document.getElementById("clear").addEventListener("click", ()=>{
+  window.location.reload();
+})

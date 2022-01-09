@@ -1,25 +1,39 @@
+:root{
+--title: #ffffff;
+--text: #ddd;
+--subtext: #434343;
+--primary: #8e05c2;
+--bg-color: #191a19;
+--secondary: #ccc;
+}
+
 h2,
 h6,
 p {
   text-align: center;
 }
-
+.main-title{
+  color: var(--title);
+}
+.main-text{
+  color: var(--text);
+}
 h6 {
-  color: grey;
+  color: var(--subtext);
 }
 .botao {
   margin-top: 30px !important;
 }
 
 .form-item {
-  background-color: #ddd;
+  background-color: var(--secondary);
 }
 
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited {
-  background-color: #8e05c2 !important;
+  background-color: var(--primary) !important;
 }
 
 .result {
@@ -30,8 +44,8 @@ body {
   margin-top: 15vh;
   height: 100vh;
 
-  background-color: #191a19;
-  color: whitesmoke;
+  background-color: var(--bg-color);
+  color: var(--text);
 }
 
 /*Navbar menu styles:*/
@@ -53,8 +67,8 @@ body {
 }
 
 .social-icon:hover {
-  color: white;
-  background-color: #8e05c2;
+  color: var(--text);
+  background-color: var(--text);
 }
 
 .title-icon {
@@ -74,4 +88,29 @@ body {
 
 svg {
   transform: rotate(180deg);
+}
+
+.theme-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+
+  position:fixed;
+   top: 10px; 
+   padding: 10px;
+  border: none;
+
+}
+
+.info-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+
+  position: fixed;
+   top: 10px; 
+   padding: 10px;
+  border: none;
+  margin-right: 2.5rem;
+
 }

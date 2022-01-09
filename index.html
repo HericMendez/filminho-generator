@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/sidebar.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
@@ -22,36 +22,31 @@
       rel="shortcut icon"
       type="image/jpg"
       href="https://img.icons8.com/doodle/48/000000/film-reel--v2.png"
+
     />
-    <script type="text/javascript" src="assets/scripts/main.js"></script>
-    <script type="text/javascript" src="assets/scripts/navbar.js"></script>
+
+
+
+
     <title>Gerador de Filmes</title>
   </head>
   <body class="container-fluid">
+   
 
-<!--
-<div class="flex-row-reverse">
-  <button class="openbtn"><a href="#"><img src="assets/icons/darkmode/moon.svg" width="32" height="32" alt=""></a></button>  
-  <button class="openbtn"><a href="#"><img src="assets/icons/darkmode/info.svg" width="32" height="32" alt=""></a></button>
+
+<div class="d-flex flex-row-reverse">
+ <button  data-toggle="tooltip" data-html="true" title="Sobre o Projeto (em construção)" class="theme-btn"><a href="#"><img id="info-icon" src="assets/icons/info-dark.svg" width="32" height="32" alt=""></a></button>  
+ <button data-toggle="tooltip" data-html="true" title="Clique e mude o tema da página!" id="toggler" class="info-btn"><a href="#"><img id="theme-icon" src="assets/icons/theme-moon.svg" width="32" height="32" alt=""></a></button>
+
 </div>
 
-  <div  id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#"> <img src="assets/icons/darkmode/hourglass.svg" width="32" height="32" alt=""> Histórico</a>
-    <a href="#"><img src="assets/icons/darkmode/favorite.svg" width="32" height="32" alt=""> Favoritos</a>
-    <a href="#"><img src="assets/icons/darkmode/moon.svg" width="32" height="32" alt=""> Dark Mode</a>
-    <a href="#"><img src="assets/icons/darkmode/info.svg" width="32" height="32" alt=""> Sobre</a>
-  </div>
--->
-  
   <div>
     
 
-
     <main id="page-container">
       <div id="content-wrap">
-        <h2>Gerador de Filminho Aleatório</h2>
-        <p>
+        <h2 class="main-title">Gerador de Filminho Aleatório</h2>
+        <p class="main-text">
           Digite uma palavra para substituir parte de um título aleatório de
           filme
           <br />(ou qualquer outra categoria de obra de entretenimento) - e veja
@@ -75,15 +70,16 @@
                         required="true"
                         class="form-control form-item"
                         placeholder="Digite uma palavra"
+                        value="cu"
                       />
                     </div>
 
                     
 
                     <div class="col-sm-5 mb-3">
-                      <select onchange="listaGenero()" class="form-control form-item" id="categoria">
+                      <select class="form-control form-item" id="categoria">
                         <option selected>Selecione uma categoria</option>
-                        <option  value="filmes">Filmes</option>
+                        <option selected value="filmes">Filmes</option>
                         <option value="series">Séries e seriados</option>
                       </select>
                     </div>
@@ -115,7 +111,7 @@
               <div class="div-to-align botao" style="height: 50px">
                 <button
                   type="button"
-                  onclick="getData(); showData();"
+                  onclick="getData();"
                   class="btn btn-primary btn-lg btn-block"
                 >
                   Gerar novo título!
@@ -123,7 +119,7 @@
 
 
                 <div class="result">
-                  <h2><span id="alterado"></span></h2>
+                  <h2><span class="main-title" id="alterado"></span></h2>
                   <h6><span id="original"></span></h6>
                   <br>
      
@@ -214,5 +210,8 @@
         <!-- Copyright -->
       </footer>
     </main>
+
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+    <script type="text/javascript" src="assets/scripts/themes.js"></script>
   </body>
 </html>

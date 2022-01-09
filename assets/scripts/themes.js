@@ -21,7 +21,19 @@ const themes = [
     text:getStyle(html, "--text"),
     subtext: getStyle(html, "--subtext"),
   },
+  {
+    name: "Sunset",
+    src:'assets/icons/theme-candle.svg', 
+    srcInfo:'assets/icons/info-sepia.svg',
 
+    primary: "#5f0119",
+    secondary: "#e5ddac",
+    bgColor: "#e7ca70",
+
+    title: "#3a1616",
+    text: "#672008",
+    subtext: "#672008",
+  },
   {
     
     name: "Daylight",
@@ -37,19 +49,7 @@ const themes = [
     subtext: "#808080",
   },
 
-  {
-    name: "Sunset",
-    src:'assets/icons/theme-candle.svg', 
-    srcInfo:'assets/icons/info-sepia.svg',
-
-    primary: "#5f0119",
-    secondary: "#e5ddac",
-    bgColor: "#e7ca70",
-
-    title: "#3a1616",
-    text: "#672008",
-    subtext: "#672008",
-  },
+ 
 ];
 
 const transformKey = (key) =>

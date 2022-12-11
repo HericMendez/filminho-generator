@@ -11,8 +11,14 @@ const tituloFilme = () => {
     case "series":
       arr = titulos.series;
       break;
+    case "animes":
+      arr = titulos.animes;
+      break;
+    case "novelas":
+      arr = titulos.novelas;
+      break;
   }
-  if (arr != "") {
+  if (mod !== "") {
     const randomMovie = arr[Math.floor(Math.random() * arr.length)];
 
     const myArr = randomMovie.split(" ");

@@ -25,9 +25,6 @@
 
     />
     
-    <script type="text/javascript" src="assets/scripts/generator.js"></script>
-    <script type="text/javascript" src="assets/scripts/generator.js"></script>
-    <script type="text/javascript" src="assets/scripts/movies.js"></script>
 
 
 
@@ -39,8 +36,8 @@
 
 
 <div class="d-flex flex-row-reverse">
- <button  data-toggle="tooltip" data-html="true" title="Sobre o Projeto (em construção)" class="theme-btn"><a href="#"><img id="info-icon" src="assets/icons/info-dark.svg" width="32" height="32" alt=""></a></button>  
- <button data-toggle="tooltip" data-html="true" title="Clique e mude o tema da página!" id="toggler" class="info-btn"><a href="#"><img id="theme-icon" src="assets/icons/theme-moon.svg" width="32" height="32" alt=""></a></button>
+ <button  class="theme-btn"><img id="info-icon" src="assets/icons/info-dark.svg" width="32" height="32" alt=""></button>  
+ <button id="toggler" class="info-btn"><a href="#"><img id="theme-icon" src="assets/icons/theme-moon.svg" width="32" height="32" alt=""></a></button>
 
 </div>
 
@@ -49,7 +46,7 @@
 
     <main id="page-container">
       <div id="content-wrap">
-        <h2 class="main-title">Gerador de Filminho Aleatório</h2>
+        <h2 class="main-title">MOVIE MEME GENERATOR</h2>
         <p class="main-text">
           Digite uma palavra para substituir parte de um título aleatório de
           filme
@@ -82,9 +79,11 @@
 
                     <div class="col-sm-5 mb-3">
                       <select class="form-control form-item" id="categoria">
-                        <option selected>Selecione uma categoria</option>
-                        <option selected value="filmes">Filmes</option>
+                        <option value='' selected>Selecione uma categoria</option>
+                        <option  value="filmes">Filmes</option>
                         <option value="series">Séries e seriados</option>
+                        <option value="novelas">Novelas</option>
+                        <option value="animes">Animes e Desenhos</option>
                       </select>
                     </div>
 
@@ -209,6 +208,9 @@
       </footer>
     </main>
 
+    <script type="text/javascript" src="assets/scripts/generator.js"></script>
+    <script type="text/javascript" src="assets/scripts/themes.js"></script>
+    <script type="text/javascript" src="assets/scripts/movies.js"></script>
 
   </body>
 </html>

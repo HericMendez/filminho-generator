@@ -1,7 +1,7 @@
 :root{
 --title: #ffffff;
 --text: #ddd;
---subtext: #434343;
+--subtext: #CCC;
 --primary: #8e05c2;
 --bg-color: #191a19;
 --secondary: #ccc;
@@ -14,6 +14,9 @@ p {
 }
 .main-title{
   color: var(--title);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  
 }
 .main-text{
   color: var(--text);
